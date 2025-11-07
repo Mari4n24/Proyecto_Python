@@ -10,7 +10,13 @@ def about(request):
 
 def crear_colectividad(request, nombre, pais):
     
-    colectividades = Colectividad(nombre=nombre, pais=pais)
-    colectividades.save()
+    colectividad = Colectividad(nombre=nombre, pais=pais)
+    colectividad.save()
     
-    return render(request, "crear_colectividad.html")
+    return render(request, "crear_colectividad.html", {"objeto_guardado": colectividad})
+
+def listar_colectividades(request):
+    
+    colectividades = Colectividad.objects.all()
+    
+    return render(request, "listar_colectividades.html", {'listado_colectividades': colectividades})
