@@ -2,7 +2,7 @@
 
 DESCRIPCIÓN
 
-Esta aplicación fue creada para registrar las Colectividades que participan en el evento anual que se realiza en noviembre en Argentina.
+Esta aplicación fue creada para registrar las Colectividades que participan en el evento anual que se realiza en noviembre en Rosario, Argentina.
 Permite anotar cada país, guardar su información y visualizarla fácilmente desde la web.
 
 CÓMO EJECUTAR EL PROYECTO
