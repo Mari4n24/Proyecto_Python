@@ -1,3 +1,13 @@
 <h1> Lista de colectividades </h1>
 
 {{listado_colectividades}}
+
+<ul> 
+    {% for colectividades in listado_colectividades %}
+    
+    <li> 
+        {{colectividades}}
+    </li>
+
+    {% endfor %}
+</ul>
