@@ -11,7 +11,7 @@
         <nav>
             <a href="{% url "inicio" %}">Inicio</a>
             <a href="{% url "about" %}">Otra</a>
-            <a href="{% url 'crear_colectividad' nombre='Luigi' pais='Italia' %}">Crear Colectividad</a>
+            <a href="{% url 'crear_colectividad' 'Luigi' 'Italia' %}">Crear Colectividad</a>
             <a href="{% url "listar_colectividades" %}">Listar las colectividades</a>
         </nav>
     </header>
