@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+
+    <header>
+        <nav>
+            <a href="{% url "inicio" %}">Inicio</a>
+            <a href="{% url "about" %}">Otra</a>
+            <a href="{% url 'crear_colectividad' nombre='Luigi' pais='Italia' %}">Crear Colectividad</a>
+            <a href="{% url "listar_colectividades" %}">Listar las colectividades</a>
+        </nav>
+    </header>
+
+    <main>
+        {% block contenido %}
+        {% endblock contenido %}
+    </main>
+
+</body>
+</html>
